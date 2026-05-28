@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: org-exporter
+    runtime: node
+    buildCommand: |
+      cd client && npm install && npm run build
+      cd ../server && npm install && pip install -r requirements.txt
+    startCommand: node server/server.js
+    plan: free
