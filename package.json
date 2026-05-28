@@ -2,11 +2,12 @@
   "name": "org-exporter",
   "version": "1.0.0",
   "private": true,
+
   "main": "server/server.js",
 
   "scripts": {
     "start": "node server/server.js",
-    "build": "cd client && rm -rf node_modules package-lock.json && npm install && npm run build"
+    "build": "python3 -m pip install -r requirements.txt && cd client && rm -rf node_modules package-lock.json && npm install && npm run build"
   },
 
   "engines": {
