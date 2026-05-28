@@ -1,8 +1,10 @@
 {
-  "name": "server",
+  "name": "org-exporter-server",
   "version": "1.0.0",
+  "main": "server.js",
+  "type": "commonjs",
   "dependencies": {
-    "compression": "^1.8.1",
-    "express": "^4.18.2"
+    "express": "^4.19.2",
+    "compression": "^1.7.4"
   }
 }
